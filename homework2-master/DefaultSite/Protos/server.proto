@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+option csharp_namespace = " DefaultSite.GrpcService";
+
+package goods;
+enum ItemType{
+    Common = 0;
+    HouseholdChemicals = 1;
+    Technics = 2;
+    Food = 3;
+}
+
+message GoodItemDto {
+  string name = 1;
+  float price = 2;
+  float weight = 3;
+  string created_at = 4;
+  ItemType type = 5;
+  int32 storage_number = 6;
+}
+
+message AddGoodRequest {
+  GoodItemDto good_item = 1;
+}
+
+message AddGoodResponse {
+  string item_guid = 1;
+}
+
+message FindByIdRequest {
+  string id = 1;
+}
+
+message FindByIdResponse {
+  GoodItemDto good_item = 1;
+}
+
+message FilterItemDto{
+  string created_at = 1;
+  int32 storage_number = 2;
+  ItemType type = 3;
+}
+message FilterRequest {
+  FilterItemDto item = 1;
+  int32 page_number = 4;
+  int32 page_size = 5;
+}
+
+message FilterResponse {
+  repeated GoodItemDto goods = 1;
+}
+
+message UpdateItemPriceRequest {
+  string id = 1;
+  float price = 2;
+}
+
+message UpdateItemPriceResponse {
+  GoodItemDto item = 1;
+}
+
+service GoodsServiceGrpc {
+  rpc AddGood(AddGoodRequest) returns (AddGoodResponse);
+  rpc FindById(FindByIdRequest) returns (FindByIdResponse);
+  rpc GetPagedData(FilterRequest) returns (FilterResponse);
+  rpc UpdateItemPrice(UpdateItemPriceRequest) returns (UpdateItemPriceResponse);
+}

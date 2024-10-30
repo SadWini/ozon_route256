@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Sky\\Downloads\\homework-master\\homework-master\\homework-6\\src\\HomeworkApp.Proto\\HomeworkApp.Proto.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Sky\\Downloads\\homework-master\\homework-master\\homework-6\\src\\HomeworkApp.Proto\\HomeworkApp.Proto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sky\\Downloads\\homework-master\\homework-master\\homework-6\\src\\HomeworkApp.Proto\\HomeworkApp.Proto.csproj",
+        "projectName": "HomeworkApp.Proto",
+        "projectPath": "C:\\Users\\Sky\\Downloads\\homework-master\\homework-master\\homework-6\\src\\HomeworkApp.Proto\\HomeworkApp.Proto.csproj",
+        "packagesPath": "C:\\Users\\Sky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sky\\Downloads\\homework-master\\homework-master\\homework-6\\src\\HomeworkApp.Proto\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "configFilePaths": [
+          "C:\\Users\\Sky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.24.3, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.57.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.58.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "AutoBogus": "2.13.1",
+            "Bogus": "34.0.2",
+            "Dapper": "2.0.123",
+            "FluentAssertions": "6.12.0",
+            "FluentMigrator": "3.3.2",
+            "FluentMigrator.Runner": "3.3.2",
+            "FluentMigrator.Runner.Postgres": "3.3.2",
+            "FluentValidation.AspNetCore": "10.3.6",
+            "Google.Protobuf": "3.24.3",
+            "Grpc.AspNetCore": "2.49.0",
+            "Grpc.AspNetCore.Server.Reflection": "2.57.0",
+            "Grpc.Net.Client": "2.57.0",
+            "Grpc.Tools": "2.58.0",
+            "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.11",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+            "Microsoft.NET.Test.Sdk": "17.7.2",
+            "Moq": "4.20.69",
+            "npgsql": "6.0.3",
+            "StackExchange.Redis": "2.6.122",
+            "xunit": "2.5.0",
+            "xunit.runner.visualstudio": "2.5.0"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
